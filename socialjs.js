@@ -3,23 +3,20 @@ var athlete = {
     age: 44,
     height: "73 inches",
     hometown: "Chicago, IL",
+    printHometown: function() {
+        console.log(this.hometown);
+    },
     favoriteSport: [
         {
             sportName: "basketball",
             teamInfo: [
                 {
-                practiceDay: "Saturday",
-                locationName: "East Valley Church",
-                public class Main {
-                    public static void main(String[] args) {
-                      String[] teamMembers = {"John", "Zack", "Thomas", "Josh"};
-                      System.out.println(teamMembers[0]);,
-                    ]
-                    }
-                  } 
+                    practiceDay: "Saturday",
+                    locationName: "East Valley Church",
                 },
             ]
         },
+    ],
     athleteFriends: [
         {
             name: "Carmen",
@@ -31,18 +28,13 @@ var athlete = {
                     sportName: "softball",
                     teamInfo: [
                         {
-                        practiceDay: "Wednesday",
-                        locationName: "Elmwood Park",
-                        public class Main {
-                            public static void main(String[] args) {
-                              String[] teamMembers = {"Jessica", "Jane", "Emily", "Mary"};
-                              System.out.println(teamMembers[0]);,
-                            ]
-                            }
-                          } 
+                            practiceDay: "Wednesday",
+                            locationName: "Elmwood Park",
                         }
                     ]
                 },
+            ],
+        },
         {
             name: "Mitchell",
             age: 28,
@@ -53,22 +45,52 @@ var athlete = {
                     sportName: "football",
                     teamInfo: [
                         {
-                        practiceDay: "Monday", 
-                        locationName: "Liberty High School",
-                        public class Main {
-                            public static void main(String[] args) {
-                              String[] teamMembers = {"Rob", "Steven", "Aaron", "Terry"};
-                              System.out.println(teamMembers[0]);,
-                            ]
-                            }
-                          } 
+                            practiceDay: "Monday",
+                            locationName: "Liberty High School",
                         }
                     ]
                 },
             ]
-        },
-        {
-            
         }
     ]
 }
+
+athlete.favoriteFood = 'Milk shake';
+athlete.car = "Jeep Liberty";
+athlete.athleteFriends.push({
+    name: "Johanna",
+    age: 35,
+    height: "67 inches",
+    hometown: "Reno, NV",
+    favoriteSport: [
+        {
+            sportName: "Cricket",
+            teamInfo: [
+                {
+                    practiceDay: "Friday",
+                    locationName: "Layton Community Center",
+                }
+            ]
+        },
+    ],
+});
+
+athlete.athleteFriends.push({
+    name: "Mike",
+    age: 30,
+    height: "72 inches",
+    hometown: "Pleasant Grove, UT",
+    favoriteSport: [
+        {
+            sportName: "Tennis",
+            teamInfo: [
+                {
+                    practiceDay: "Monday",
+                    locationName: "Skyline High School Tennis",
+                }
+            ]
+        },
+    ],
+})
+
+console.log(athlete)
